@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="promos" default="all" basedir=".">
+
+	<property name="project.jar" value="promos.jar"/>
+	<property name="project.war" value="promos.war"/>
+	<property name="web" value="web/promos.war"/>
+	<property name="deploy" value="D:/jboss7/standalone/deployments"/>
+	<property name="version" value="1.0.2"/>
+	
+	<property name="src" value="src"/>
+	<property name="build" value="E:/project/jemp/promos/web/promos.war/WEB-INF/classes"/>
+	<property name="lib" value="web/promos.war/WEB-INF/lib"/>
+	<property name="doc" value=".doc"/>
+	
+	
+	
+	<path id="project.class.path">
+		<pathelement path="${java.class.path}"/>
+		<fileset dir="${lib}">
+			<include name="**/*.jar"/>
+			<include name="**/*.zip"/>
+		</fileset>
+	</path>
+	
+	<target name="delwar">
+			<delete failonerror="true">
+				<fileset dir="${deploy}">
+					<include name="**/${project.war}"/>
+				</fileset>
+			</delete>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build}" failonerror="false"/>
+	</target>
+	
+	<target name="init">
+		<mkdir dir="${build}"/>
+		<mkdir dir="${build}/META-INF"/>
+	</target>
+	
+	<target name="compile">
+		<javac srcdir="${src}" destdir="${build}" debug="on">
+			<classpath refid="project.class.path"/>
+		</javac>
+	</target>
+	
+
+	<target name="jar">
+		<javac srcdir="${src}" destdir="${build}" debug="on">
+			<classpath refid="project.class.path"/>
+		</javac>
+		
+		<jar jarfile="${project.jar}" basedir="${build}">
+			<manifest>
+				<attribute name="version" value="${version}"/>
+			</manifest>
+		</jar>	
+		
+	</target>
+	
+	
+	<target name="war">
+			<delete failonerror="true">
+				<fileset dir="${deploy}">
+					<include name="**/${project.war}"/>
+				</fileset>
+			</delete>
+		<jar jarfile="${deploy}/${project.war}">
+		      <fileset dir="${web}">
+		        <include name="**/*.*"/>
+		      </fileset>
+		 </jar>
+	</target>
+	
+	
+
+	<target name="doc">
+		<delete dir="${doc}" failonerror="true"/>
+		<mkdir dir="${doc}"/>
+		<javadoc packagenames="*"
+				sourcepath="${src}"
+				destdir="${doc}"
+				classpathref="project.class.path"
+				author="true"
+				version="true"
+				private="false"
+				use="true"
+				splitindex="true"
+				windowtitle="${project}"
+				doctitle="${project}">
+		</javadoc>
+	</target>
+	
+	<target name="pack" depends="war" />
+	<target name="all" depends="clean,init,compile" />
+	
+</project>

@@ -1,0 +1,80 @@
+a:visited {
+	font-size: 12px;
+	color: #0000CC;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 12px;
+	color: #FF3300;
+	text-decoration: none;
+}
+a:link {
+	font-size: 12px;
+	color: #0000CC;
+	text-decoration: none;
+}
+table{
+	font-size: 12px;
+	font-family: "Verdana", "宋体";
+
+}
+.side-readonly {
+	border: 1px solid #CCCCCC;
+	height: 17px;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	font-family: "Verdana", "宋体";
+
+}
+.ceng {
+	position: relative;
+}
+side {
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+}
+
+INPUT{
+    padding: 1px 3px;
+    background:#fff url(../images/text-bg.gif) repeat-x 0 0;
+    border: 1px solid #B5B8C8;
+    FONT-FAMILY: 宋体,arial;
+}
+SELECT{
+    padding: 1px 3px;
+    background:#fff url(../images/text-bg.gif) repeat-x 0 0;
+    border: 1px solid #B5B8C8;
+    FONT-FAMILY: 宋体,arial;
+}
+TEXTAREA{
+    padding: 1px 3px;
+    background:#fff url(../images/text-bg.gif) repeat-x 0 0;
+    border: 1px solid #B5B8C8;
+    FONT-FAMILY: 宋体,arial;
+}
+
+input1 {
+	font-size: 12px;
+	height: 18px;
+	border: 1px solid #999999;
+
+
+}
+select1 {
+	border: 1px solid #999999;
+	line-height: 18px;
+	height: 18px;
+
+}
+r-side {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #000000;
+}
+style {
+	border: 1px solid #999999;
+	line-height: 20px;
+
+}
+.cdhj { line-height:12px;}

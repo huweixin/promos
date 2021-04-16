@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PROMOS_CONFIG>
+
+<SERVER_CONFIG>
+  <server_name>jboss</server_name>
+  <show_message>1</show_message>
+  <run_model>1</run_model>
+  <!--run_model:1:设计开发模式,对不影响开发的表进行缓存,2:进行缓存操作但只对表(T_APPMAIN),3：全面进行缓存操作(T_APPMAIN,T_APPCOMP等) -->
+  <db_sys>mysql</db_sys><!-- oracle,mysql,sybase,mssql -->
+  <db_user>promos</db_user>
+</SERVER_CONFIG>
+
+<DATASOURCE_JNDI_NAME>
+<DSPromos>java:jboss/datasources/DSPromos</DSPromos>
+</DATASOURCE_JNDI_NAME>
+
+</PROMOS_CONFIG>

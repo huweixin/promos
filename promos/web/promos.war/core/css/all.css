@@ -1,0 +1,30 @@
+INPUT{
+    padding: 1px 3px;
+    background:#fff url(../images/text-bg.gif) repeat-x 0 0;
+    border: 1px solid #B5B8C8;
+    FONT-FAMILY: ËÎÌו,arial;
+}
+SELECT{
+    padding: 1px 3px;
+    background:#fff url(../images/text-bg.gif) repeat-x 0 0;
+    border: 1px solid #B5B8C8;
+    FONT-FAMILY: ËÎÌו,arial;
+}
+TEXTAREA{
+    padding: 1px 3px;
+    background:#fff url(../images/text-bg.gif) repeat-x 0 0;
+    border: 1px solid #B5B8C8;
+    FONT-FAMILY: ËÎÌו,arial;
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #0000CC; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #FF6600; TEXT-DECORATION: none
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #0000CC; TEXT-DECORATION: none
+}
+.box {
+	BORDER-RIGHT: #ff6600 1px solid; BORDER-TOP: #ff6600 1px solid; BORDER-LEFT: #ff6600 1px solid; BORDER-BOTTOM: #ff6600 1px solid; BACKGROUND-COLOR: #fcedd8
+}
