@@ -35,7 +35,8 @@ promos本身90%的界面功能也是由promos开发的。
 使用promos可开发ERP、OA、CRM、HR、MIS等WEB桌面应用，帮助快速构建应用系统，使应用系统的开发仅需致力于业务的开发。
 
 
-要求：JDK1.7,jboss7
+要求：JDK1.7,jboss7，使用maven编译
+
 
 
 promos简单操作说明：
@@ -53,11 +54,11 @@ promos简单操作说明：
 https://v.youku.com/v_show/id_XNTEzOTI3MTQ0OA==.html
 
 线上地址:
-8.136.143.26:85/promos/core/CoreServlet.do?method=showFromCore&AppName=LOGIN_PROMOS
-用户名：test，密码：test
+http://8.136.143.26:85/promos/core/CoreServlet.do?method=showFromCore&AppName=LOGIN_PROMOS
+用户名：test，密码：test,选择开发项目库：test
 
 实战项目：
-8.136.143.26:85/promos/core/CoreServlet.do?method=showFromCore&AppName=LOGIN_ZRCANT
+http://8.136.143.26:85/promos/core/CoreServlet.do?method=showFromCore&AppName=LOGIN_ZRCANT
 用户名：guest，密码：guest
 
 
