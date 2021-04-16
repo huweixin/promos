@@ -30,7 +30,7 @@ promos有开发简单高效，快速敏捷，低成本，高可通用性，高�
 promos本身90%的界面功能也是由promos开发的。
 
 
-# 可用到的方向：
+# 使用方向：
 
 使用promos可开发ERP、OA、CRM、HR、MIS等WEB桌面应用，帮助快速构建应用系统，使应用系统的开发仅需致力于业务的开发。
 
@@ -61,6 +61,4 @@ http://8.136.143.26:85/promos/core/CoreServlet.do?method=showFromCore&AppName=LO
 http://8.136.143.26:85/promos/core/CoreServlet.do?method=showFromCore&AppName=LOGIN_ZRCANT
 用户名：guest，密码：guest
 
-# 2.0版本正在开发中
-
-# 有疑问可以加QQ：184655332
+# 2.0版本正在开发，有疑问或需要可以加QQ：184655332
