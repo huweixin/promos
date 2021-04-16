@@ -61,5 +61,6 @@ http://8.136.143.26:85/promos/core/CoreServlet.do?method=showFromCore&AppName=LO
 http://8.136.143.26:85/promos/core/CoreServlet.do?method=showFromCore&AppName=LOGIN_ZRCANT
 用户名：guest，密码：guest
 
+2.0版本正在开发中
 
 有疑问可以加QQ：184655332
